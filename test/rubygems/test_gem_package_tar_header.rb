@@ -121,7 +121,7 @@ class TestGemPackageTarHeader < Gem::Package::TarTestCase
       uid: 0,
       uname: "",
       version: 0,
-    ), Gem::Package::TarHeader.const_get(:EMPTY)
+    ), @tar_header
   end
 
   def test_equals2
